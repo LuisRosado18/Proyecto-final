@@ -22,4 +22,6 @@ El método fail_node permite marcar un nodo como fallido, desactivándolo y agre
 
 El método replicate se ejecuta en el nodo primario y se encarga de realizar la replicación de datos a otros nodos activos. Con una probabilidad del 20%, envía mensajes de replicación a los nodos activos para mantener los datos replicados y tolerar posibles fallas en los nodos.
 
+![dog-computer](https://github.com/LuisRosado18/Proyecto-final/assets/75033260/947055e2-a321-40f2-8875-2fbb0d42d229)
+
 El intercambio de mensajes entre los nodos, como los mensajes de latido, replicación, falla y recuperación, permite la comunicación y coordinación entre los nodos del sistema. Además, se utilizan mensajes de confirmación (por ejemplo, "HeartbeatAck" y "ReplicateAck") para asegurar que los nodos estén informados sobre el estado de los otros nodos y puedan tomar acciones adecuadas.
