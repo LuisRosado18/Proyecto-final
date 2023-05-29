@@ -10,12 +10,11 @@ Al tener un líder, el sistema puede ser más resiliente a fallos. Si un nodo fa
 
 El método detect_failed_nodes se encarga de detectar nodos que pueden haber fallado. Con una probabilidad del 50%, marca un nodo como sospechoso de haber fallado si cumple ciertas condiciones. Esto permite detectar posibles fallas en los nodos y tomar medidas para su recuperación.
 
-![Captura de pantalla 2023-05-29 091305](https://github.com/LuisRosado18/Proyecto-final/assets/750332
+![Captura de pantalla 2023-05-29 091305](https://github.com/LuisRosado18/Proyecto-final/assets/75033260/01e57847-1924-4ec2-af1e-dfb1e86dfc08)
 
 El método recover_failed_nodes se encarga de recuperar los nodos que han sido marcados como fallidos. Itera sobre los nodos fallidos y, con una probabilidad del 50%, los marca como recuperados. Además, envía un mensaje de recuperación al líder si corresponde. Esto permite restaurar los nodos fallidos y devolverlos al estado activo.
 
 ![Captura de pantalla 2023-05-29 091353](https://github.com/LuisRosado18/Proyecto-final/assets/75033260/92ab799d-8297-432c-b262-b470bc0d16a4)
-60/01e57847-1924-4ec2-af1e-dfb1e86dfc08)
 
 El método fail_node permite marcar un nodo como fallido, desactivándolo y agregándolo a la lista de nodos fallidos. Por otro lado, el método recover se encarga de recuperar un nodo que ha sido marcado como fallido, restaurando su estado activo y eliminando las marcas de fallido y sospechoso.
 
